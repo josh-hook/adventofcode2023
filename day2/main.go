@@ -73,6 +73,7 @@ func main() {
 		sum += found['b'] * found['r'] * found['g']
 	}
 
+	// Part 2 solution runs in 0.001238s.
 	fmt.Println(sum)
 	fmt.Printf("Time taken: %f\n", time.Since(start).Seconds())
 }
