@@ -93,7 +93,7 @@ def _parse_line_part_2(line: str) -> int:
     last, _ = _find_first_number(line[:first_idx:-1], revtrie)
     if last is None:
         last = first
-    return int(f"{first}{last}")
+    return (first*10) + last
 
 
 @helpers.timed
